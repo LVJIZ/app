@@ -36,16 +36,8 @@ document.write(
 function init() {
   document.siteName = $("title").html();
   $("body").addClass("mdui-theme-primary-blue-grey mdui-theme-accent-blue");
-  var html = ``
-<header class="nexmoe-nav">
-    <div class="navSize">
-			<a href="/"><img class="avatar" src="https://i.loli.net/2020/07/12/fHiudSK2WFYUbeT.jpg"/></a>
-			<div class="nav_menu">
-				
-				<div class="nav_icon" ></div>
-			</div>
-	</div>
-</header>
+  var html = `
+
 <div class="mdui-container">
   <div class="mdui-container-fluid">
     <div id="nav" class="mdui-toolbar nexmoe-item"> </div>
