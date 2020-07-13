@@ -16,9 +16,7 @@ document.write(
 document.write(
   '<script src="//cdn.jsdelivr.net/gh/5MayRain/goIndex-theme-nexmoe/js/markdown-it.min.js"></script>'
 );
-document.write(
-  "<style>.mdui-appbar .mdui-toolbar{height:56px;font-size:1pc}.mdui-toolbar>*{padding:0 6px;margin:0 2px}.mdui-toolbar>i{opacity:.5}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-container{max-width:980px}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1}</style>"
-);
+
 document.write(
   '<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/5MayRain/goIndex-theme-nexmoe/css/DPlayer.min.css">'
 );
@@ -42,14 +40,12 @@ function init() {
 			<a href="/"><img class="avatar" src="https://i.loli.net/2020/07/12/fHiudSK2WFYUbeT.jpg"/></a>
 			<div class="nav_menu">
 				
-				<div class="nav_icon" ></div>
+				
 			</div>
 	</div>
 </header>
 <div class="mdui-container">
-  <div class="mdui-container-fluid">
-    <div id="nav" class="mdui-toolbar nexmoe-item"> </div>
-  </div>
+  
   <div class="mdui-container-fluid">
     <div id="head_md" class="mdui-typo nexmoe-item" style="display:none;padding: 20px 0;"></div>
     <div id="content" class="nexmoe-item"> </div>
@@ -266,10 +262,7 @@ function file_code(path) {
 <div class="mdui-container">
 <pre id="editor" ></pre>
 </div>
-<div class="mdui-textfield">
-	<label class="mdui-textfield-label">下载地址</label>
-	<input class="mdui-textfield-input" type="text" value="${href}"/>
-</div>
+
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
 <script src="//cdn.jsdelivr.net/gh/5MayRain/goIndex-theme-nexmoe/js/ace.js"></script>
@@ -374,18 +367,7 @@ function file_image(path) {
 	<br>
 	<img class="mdui-img-fluid" src="${url}"/>
 	<br>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">下载地址</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML 引用地址</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
-	</div>
-    <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Markdown 引用地址</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${url})"/>
-	</div>
+	
         <br>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
